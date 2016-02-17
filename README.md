@@ -28,7 +28,7 @@
         segmentedControl.addTarget(self, action: "segmentValueChanged:", forControlEvents: .ValueChanged)
         self.segmentValueChanged(self.segmentedControl)
         
-        //selector meThod
+        # selector meThod
           
             func segmentValueChanged(sender:DGSegmentedControl){
               if sender.selectedIndex == 0 {//do some thing}
