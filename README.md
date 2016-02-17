@@ -1,5 +1,5 @@
 # DGSegmentedControl
- Custom Segmented Control that has FullFeature over need of customisation.
+ Custom Segmented Control that has Full Feature customization on need of customisation.
 
 # Licence
 The MIT License (MIT)
