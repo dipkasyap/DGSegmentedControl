@@ -27,6 +27,17 @@
         segmentedControl.font = UIFont.systemFontOfSize(18)
         segmentedControl.addTarget(self, action: "segmentValueChanged:", forControlEvents: .ValueChanged)
         self.segmentValueChanged(self.segmentedControl)
+        
+        //selector meThod
+            func segmentValueChanged(sender:DGSegmentedControl){
+              if sender.selectedIndex == 0{
+             self.displayGround.backgroundColor = UIColor.grayColor()
+             self.info.text = "First Segment selected"
+             } else {
+            self.displayGround.backgroundColor = UIColor(red: 0.761, green: 0.722, blue: 0.580, alpha: 1.00)
+            self.info.text = "Second Segment selected"
+        }
+    }
 
 # Licence
 The MIT License (MIT)
