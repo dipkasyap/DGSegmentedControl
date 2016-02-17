@@ -3,9 +3,12 @@
 
 # Usage
 1.Drag DGSegmentedControl foler in to your project.
+
 2.Add UIView on story which will work as segmented control for you.
+
 3.Assign DGSegmentedControl calss to that View from Identity Inspector
-4. Drag outlet to Your View Controller and access like in demo project.
+
+4.Drag outlet to Your View Controller and access like in demo project.
 
         //IBOutlet
         ```
