@@ -11,11 +11,11 @@
 4. Drag outlet to Your View Controller and access like in demo project.
 
         //IBOutlet
-        ```
+
          @IBOutlet weak var segmentedControl: DGSegmentedControl!
-        ```
+
         //inside view did load or somewhere in class
-        ```
+
         segmentedControl.items = ["First Segment","Second Segment"]
         segmentedControl.font = UIFont(name: "Avenir-Black", size: 12)
         segmentedControl.borderColor = UIColor(red: 0.988, green: 0.820, blue: 0.447, alpha: 1.00)
@@ -27,7 +27,7 @@
         segmentedControl.font = UIFont.systemFontOfSize(18)
         segmentedControl.addTarget(self, action: "segmentValueChanged:", forControlEvents: .ValueChanged)
         self.segmentValueChanged(self.segmentedControl)
-        ```
+
 # Licence
 The MIT License (MIT)
 
