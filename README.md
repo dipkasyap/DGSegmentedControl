@@ -7,6 +7,24 @@
 3. Assign DGSegmentedControl calss to that View from Identity Inspector
 4. Drag outlet to Your View Controller and access like in demo project.
 
+        //out let 
+        ```
+         @IBOutlet weak var segmentedControl: DGSegmentedControl!
+        ```
+        //inside view did load or somewhere in class
+        ```
+        segmentedControl.items = ["First Segment","Second Segment"]
+        segmentedControl.font = UIFont(name: "Avenir-Black", size: 12)
+        segmentedControl.borderColor = UIColor(red: 0.988, green: 0.820, blue: 0.447, alpha: 1.00)
+        segmentedControl.selectedIndex = 0
+        segmentedControl.borderSize = 2
+        segmentedControl.thumbColor = UIColor(red: 0.988, green: 0.820, blue: 0.447, alpha: 1.00)
+        segmentedControl.selectedLabelColor = UIColor.blackColor()
+        segmentedControl.thumUnderLineSize = 8
+        segmentedControl.font = UIFont.systemFontOfSize(18)
+        segmentedControl.addTarget(self, action: "segmentValueChanged:", forControlEvents: .ValueChanged)
+        self.segmentValueChanged(self.segmentedControl)
+        ```
 # Licence
 The MIT License (MIT)
 
