@@ -7,7 +7,7 @@
 3. Assign DGSegmentedControl calss to that View from Identity Inspector
 4. Drag outlet to Your View Controller and access like in demo project.
 
-        //out let 
+        //IBOutlet
         ```
          @IBOutlet weak var segmentedControl: DGSegmentedControl!
         ```
