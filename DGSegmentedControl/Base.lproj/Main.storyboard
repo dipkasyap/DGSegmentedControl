@@ -44,8 +44,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfa-Ju-3Ds">
                                 <rect key="frame" x="0.0" y="149" width="600" height="451"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Segment Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-JS-F9g">
-                                        <rect key="frame" x="172" y="211" width="256" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-JS-F9g">
+                                        <rect key="frame" x="279" y="211" width="42" height="28"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <color key="textColor" red="0.93333333330000001" green="0.81568627449999997" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -78,6 +78,11 @@
                             <constraint firstItem="FcK-3z-0Pk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ybV-rm-KRi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayGround" destination="rfa-Ju-3Ds" id="oD3-yc-cok"/>
+                        <outlet property="info" destination="lS3-JS-F9g" id="wv2-70-psA"/>
+                        <outlet property="segmentedControl" destination="FcK-3z-0Pk" id="d7V-LW-L7Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
