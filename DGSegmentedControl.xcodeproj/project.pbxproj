@@ -15,6 +15,7 @@
 		18DE8F9C1C7466A10099F63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DE8F9A1C7466A10099F63D /* LaunchScreen.storyboard */; };
 		18DE8FA71C7466A10099F63D /* DGSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8FA61C7466A10099F63D /* DGSegmentedControlTests.swift */; };
 		18DE8FB21C7466A10099F63D /* DGSegmentedControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8FB11C7466A10099F63D /* DGSegmentedControlUITests.swift */; };
+		18DE8FC11C7467E80099F63D /* DGSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8FC01C7467E80099F63D /* DGSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		18DE8FAD1C7466A10099F63D /* DGSegmentedControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGSegmentedControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DE8FB11C7466A10099F63D /* DGSegmentedControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentedControlUITests.swift; sourceTree = "<group>"; };
 		18DE8FB31C7466A10099F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DE8FC01C7467E80099F63D /* DGSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		18DE8F8D1C7466A10099F63D /* DGSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				18DE8FBF1C7467E80099F63D /* DGSegmentedControl */,
 				18DE8F8E1C7466A10099F63D /* AppDelegate.swift */,
 				18DE8F901C7466A10099F63D /* ViewController.swift */,
 				18DE8F921C7466A10099F63D /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				18DE8FB31C7466A10099F63D /* Info.plist */,
 			);
 			path = DGSegmentedControlUITests;
+			sourceTree = "<group>";
+		};
+		18DE8FBF1C7467E80099F63D /* DGSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				18DE8FC01C7467E80099F63D /* DGSegmentedControl.swift */,
+			);
+			path = DGSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				18DE8F911C7466A10099F63D /* ViewController.swift in Sources */,
 				18DE8F8F1C7466A10099F63D /* AppDelegate.swift in Sources */,
 				18DE8F971C7466A10099F63D /* DGSegmentedControl.xcdatamodeld in Sources */,
+				18DE8FC11C7467E80099F63D /* DGSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
