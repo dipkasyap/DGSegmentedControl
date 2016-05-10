@@ -1,11 +1,6 @@
-//
-//  ADVSegmentedControl.swift
-//  Mega
-//
+
 //  Created by dip on 2/17/16.
 //  Copyright © 2016 Esig. All rights reserved.
-//
-
 
 import UIKit
 
