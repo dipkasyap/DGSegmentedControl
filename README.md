@@ -1,5 +1,7 @@
 # DGSegmentedControl
  Custom Segmented Control that has Full Feature customization on need of customisation.
+# Supports Swift 3.0
+For Swift 2.X user previous release
 
 # Usage
 1. Drag DGSegmentedControl folder in to your project.
