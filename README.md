@@ -1,3 +1,8 @@
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/12591229/30094395-d8aadb7a-92eb-11e7-8e19-e3c90c17a3c7.png">
+</p>
+
+
 # DGSegmentedControl
  Custom Segmented Control that has Full Feature customization on need of customisation.
  ![dgsegmentedconrtol](https://user-images.githubusercontent.com/12591229/30465794-24301d30-99f9-11e7-8be5-920bde161abc.png)
