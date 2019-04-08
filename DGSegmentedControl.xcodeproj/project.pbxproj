@@ -13,27 +13,8 @@
 		18DE8F971C7466A10099F63D /* DGSegmentedControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8F951C7466A10099F63D /* DGSegmentedControl.xcdatamodeld */; };
 		18DE8F991C7466A10099F63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DE8F981C7466A10099F63D /* Assets.xcassets */; };
 		18DE8F9C1C7466A10099F63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DE8F9A1C7466A10099F63D /* LaunchScreen.storyboard */; };
-		18DE8FA71C7466A10099F63D /* DGSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8FA61C7466A10099F63D /* DGSegmentedControlTests.swift */; };
-		18DE8FB21C7466A10099F63D /* DGSegmentedControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8FB11C7466A10099F63D /* DGSegmentedControlUITests.swift */; };
 		18DE8FC11C7467E80099F63D /* DGSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE8FC01C7467E80099F63D /* DGSegmentedControl.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		18DE8FA31C7466A10099F63D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18DE8F831C7466A00099F63D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18DE8F8A1C7466A00099F63D;
-			remoteInfo = DGSegmentedControl;
-		};
-		18DE8FAE1C7466A10099F63D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18DE8F831C7466A00099F63D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18DE8F8A1C7466A00099F63D;
-			remoteInfo = DGSegmentedControl;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18DE8F8B1C7466A00099F63D /* DGSegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGSegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,31 +25,11 @@
 		18DE8F981C7466A10099F63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DE8F9B1C7466A10099F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18DE8F9D1C7466A10099F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18DE8FA21C7466A10099F63D /* DGSegmentedControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGSegmentedControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18DE8FA61C7466A10099F63D /* DGSegmentedControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentedControlTests.swift; sourceTree = "<group>"; };
-		18DE8FA81C7466A10099F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18DE8FAD1C7466A10099F63D /* DGSegmentedControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGSegmentedControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18DE8FB11C7466A10099F63D /* DGSegmentedControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSegmentedControlUITests.swift; sourceTree = "<group>"; };
-		18DE8FB31C7466A10099F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18DE8FC01C7467E80099F63D /* DGSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18DE8F881C7466A00099F63D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18DE8F9F1C7466A10099F63D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18DE8FAA1C7466A10099F63D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				18DE8F8D1C7466A10099F63D /* DGSegmentedControl */,
-				18DE8FA51C7466A10099F63D /* DGSegmentedControlTests */,
-				18DE8FB01C7466A10099F63D /* DGSegmentedControlUITests */,
 				18DE8F8C1C7466A00099F63D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				18DE8F8B1C7466A00099F63D /* DGSegmentedControl.app */,
-				18DE8FA21C7466A10099F63D /* DGSegmentedControlTests.xctest */,
-				18DE8FAD1C7466A10099F63D /* DGSegmentedControlUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,24 +68,6 @@
 				18DE8F951C7466A10099F63D /* DGSegmentedControl.xcdatamodeld */,
 			);
 			path = DGSegmentedControl;
-			sourceTree = "<group>";
-		};
-		18DE8FA51C7466A10099F63D /* DGSegmentedControlTests */ = {
-			isa = PBXGroup;
-			children = (
-				18DE8FA61C7466A10099F63D /* DGSegmentedControlTests.swift */,
-				18DE8FA81C7466A10099F63D /* Info.plist */,
-			);
-			path = DGSegmentedControlTests;
-			sourceTree = "<group>";
-		};
-		18DE8FB01C7466A10099F63D /* DGSegmentedControlUITests */ = {
-			isa = PBXGroup;
-			children = (
-				18DE8FB11C7466A10099F63D /* DGSegmentedControlUITests.swift */,
-				18DE8FB31C7466A10099F63D /* Info.plist */,
-			);
-			path = DGSegmentedControlUITests;
 			sourceTree = "<group>";
 		};
 		18DE8FBF1C7467E80099F63D /* DGSegmentedControl */ = {
@@ -159,42 +98,6 @@
 			productReference = 18DE8F8B1C7466A00099F63D /* DGSegmentedControl.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18DE8FA11C7466A10099F63D /* DGSegmentedControlTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18DE8FB91C7466A10099F63D /* Build configuration list for PBXNativeTarget "DGSegmentedControlTests" */;
-			buildPhases = (
-				18DE8F9E1C7466A10099F63D /* Sources */,
-				18DE8F9F1C7466A10099F63D /* Frameworks */,
-				18DE8FA01C7466A10099F63D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18DE8FA41C7466A10099F63D /* PBXTargetDependency */,
-			);
-			name = DGSegmentedControlTests;
-			productName = DGSegmentedControlTests;
-			productReference = 18DE8FA21C7466A10099F63D /* DGSegmentedControlTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		18DE8FAC1C7466A10099F63D /* DGSegmentedControlUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18DE8FBC1C7466A10099F63D /* Build configuration list for PBXNativeTarget "DGSegmentedControlUITests" */;
-			buildPhases = (
-				18DE8FA91C7466A10099F63D /* Sources */,
-				18DE8FAA1C7466A10099F63D /* Frameworks */,
-				18DE8FAB1C7466A10099F63D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18DE8FAF1C7466A10099F63D /* PBXTargetDependency */,
-			);
-			name = DGSegmentedControlUITests;
-			productName = DGSegmentedControlUITests;
-			productReference = 18DE8FAD1C7466A10099F63D /* DGSegmentedControlUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,16 +111,6 @@
 					18DE8F8A1C7466A00099F63D = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
-					};
-					18DE8FA11C7466A10099F63D = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
-						TestTargetID = 18DE8F8A1C7466A00099F63D;
-					};
-					18DE8FAC1C7466A10099F63D = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
-						TestTargetID = 18DE8F8A1C7466A00099F63D;
 					};
 				};
 			};
@@ -235,8 +128,6 @@
 			projectRoot = "";
 			targets = (
 				18DE8F8A1C7466A00099F63D /* DGSegmentedControl */,
-				18DE8FA11C7466A10099F63D /* DGSegmentedControlTests */,
-				18DE8FAC1C7466A10099F63D /* DGSegmentedControlUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,20 +140,6 @@
 				18DE8F9C1C7466A10099F63D /* LaunchScreen.storyboard in Resources */,
 				18DE8F991C7466A10099F63D /* Assets.xcassets in Resources */,
 				18DE8F941C7466A10099F63D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18DE8FA01C7466A10099F63D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18DE8FAB1C7466A10099F63D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,36 +157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18DE8F9E1C7466A10099F63D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18DE8FA71C7466A10099F63D /* DGSegmentedControlTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18DE8FA91C7466A10099F63D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18DE8FB21C7466A10099F63D /* DGSegmentedControlUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18DE8FA41C7466A10099F63D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18DE8F8A1C7466A00099F63D /* DGSegmentedControl */;
-			targetProxy = 18DE8FA31C7466A10099F63D /* PBXContainerItemProxy */;
-		};
-		18DE8FAF1C7466A10099F63D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18DE8F8A1C7466A00099F63D /* DGSegmentedControl */;
-			targetProxy = 18DE8FAE1C7466A10099F63D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18DE8F921C7466A10099F63D /* Main.storyboard */ = {
@@ -374,6 +222,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,6 +263,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -427,7 +277,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.esignature.www.DGSegmentedControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -439,59 +289,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.esignature.www.DGSegmentedControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		18DE8FBA1C7466A10099F63D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DGSegmentedControlTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.esignature.www.DGSegmentedControlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DGSegmentedControl.app/DGSegmentedControl";
-			};
-			name = Debug;
-		};
-		18DE8FBB1C7466A10099F63D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DGSegmentedControlTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.esignature.www.DGSegmentedControlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DGSegmentedControl.app/DGSegmentedControl";
-			};
-			name = Release;
-		};
-		18DE8FBD1C7466A10099F63D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = DGSegmentedControlUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.esignature.www.DGSegmentedControlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DGSegmentedControl;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		18DE8FBE1C7466A10099F63D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = DGSegmentedControlUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.esignature.www.DGSegmentedControlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DGSegmentedControl;
-				USES_XCTRUNNER = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -512,24 +310,6 @@
 			buildConfigurations = (
 				18DE8FB71C7466A10099F63D /* Debug */,
 				18DE8FB81C7466A10099F63D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18DE8FB91C7466A10099F63D /* Build configuration list for PBXNativeTarget "DGSegmentedControlTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18DE8FBA1C7466A10099F63D /* Debug */,
-				18DE8FBB1C7466A10099F63D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18DE8FBC1C7466A10099F63D /* Build configuration list for PBXNativeTarget "DGSegmentedControlUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18DE8FBD1C7466A10099F63D /* Debug */,
-				18DE8FBE1C7466A10099F63D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
