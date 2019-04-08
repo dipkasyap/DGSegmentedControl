@@ -18,29 +18,34 @@ For Swift 2.X use previous release
 4. Drag outlet to Your View Controller and access like in demo project.
 
         //IBOutlet
-
          @IBOutlet weak var segmentedControl: DGSegmentedControl!
-
-        //inside view did load or somewhere in class
-
-        segmentedControl.items = ["First Segment","Second Segment"]
-        segmentedControl.font = UIFont(name: "Avenir-Black", size: 12)
-        segmentedControl.borderColor = UIColor(red: 0.988, green: 0.820, blue: 0.447, alpha: 1.00)
-        segmentedControl.selectedIndex = 0
-        segmentedControl.borderSize = 2
-        segmentedControl.thumbColor = UIColor(red: 0.988, green: 0.820, blue: 0.447, alpha: 1.00)
-        segmentedControl.selectedLabelColor = UIColor.blackColor()
-        segmentedControl.thumUnderLineSize = 8
-        segmentedControl.font = UIFont.systemFontOfSize(18)
-        segmentedControl.addTarget(self, action: "segmentValueChanged:", forControlEvents: .ValueChanged)
-        self.segmentValueChanged(self.segmentedControl)
+      
+         override func viewDidLoad() {
+           super.viewDidLoad()
+           //setup
+           setupSegments()
+       }
+       
+       //setup
+         private func setupSegments() {
         
-        # selector meThod
-          
-            func segmentValueChanged(sender:DGSegmentedControl){
-              if sender.selectedIndex == 0 {//do some thing}
-              else { //else do some thing else}
-              }
+            segmentControl.items = ["First Segment","Second Segment"]
+            segmentControl.font = UIFont(name: "Avenir-Black", size: 12)
+            segmentControl.borderColor = AppConstants.Color.mportGreen
+            segmentControl.selectedIndex = 0
+            segmentControl.borderSize = 2
+            segmentControl.thumbColor = AppConstants.Color.mportGreen
+            segmentControl.selectedLabelColor = AppConstants.Color.mportGreen
+            segmentControl.thumUnderLineSize = 8
+            segmentControl.font = UIFont.systemFont(ofSize: 18)
+            segmentControl.addTarget(self, action:#selector(segmentValueChanged(segmentControl:)), for: .valueChanged)
+        }
+
+        //MARK:- Actions
+         @objc func segmentValueChanged(segmentControl: DGSegmentedControl){
+            if segmentControl.selectedIndex == 0 {
+            }
+        }
 
 # Licence
 
