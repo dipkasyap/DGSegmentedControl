@@ -47,33 +47,33 @@ import UIKit
         }
     }
     
-    @IBInspectable var borderColor : UIColor = UIColor(red: 0.788, green: 0.788, blue: 0.788, alpha: 1.00) {
+    @IBInspectable var tabBorderColor : UIColor = UIColor(red: 0.788, green: 0.788, blue: 0.788, alpha: 1.00) {
         didSet {
-            self.setUnderline(ofColor: borderColor, andSize: borderSize)
+            setNeedsDisplay()
         }
     }
     
-    @IBInspectable var font : UIFont! = UIFont.systemFont(ofSize: 12) {
+    @IBInspectable var font: UIFont! = UIFont.systemFont(ofSize: 12) {
         didSet {
             setFont()
         }
     }
     
-    @IBInspectable var borderSize:CGFloat = 1.0 {
+    @IBInspectable var borderSize: CGFloat = 0.5 {
         didSet {
-            self.setUnderline(ofColor: borderColor, andSize: borderSize)
+            setNeedsDisplay()
         }
     }
     
-    @IBInspectable var thumUnderLineSize:CGFloat = 10 {
+    @IBInspectable var thumUnderLineSize:CGFloat = 4 {
         didSet {
-            self.layoutSubviews()
+            layoutSubviews()
         }
     }
     
+    //MARK:- init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupView()
     }
     
@@ -82,15 +82,37 @@ import UIKit
         setupView()
     }
     
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        setBorder()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupThumb()
+        displayNewSelectedIndex()
+    }
+    
+    
+    //MARK:- setup
     func setupView(){
-        backgroundColor = UIColor.clear
         setupLabels()
         addIndividualItemConstraints(items: labels, mainView: self, padding: 0)
         insertSubview(thumbView, at: 0)
     }
     
+    private func setupThumb() {
+        var thumbFrame = self.bounds
+        let newWidth = thumbFrame.width / CGFloat(items.count)
+        thumbFrame.size.width = newWidth
+        thumbFrame.origin.y  = thumbFrame.height - self.thumUnderLineSize
+        thumbFrame.size.height = thumUnderLineSize
+        thumbView.frame = thumbFrame
+        thumbView.backgroundColor = thumbColor
+    }
+    
     func setBorder(){
-        self.setUnderline(ofColor: borderColor, andSize: borderSize)
+        self.setUnderline(ofColor: tabBorderColor, andSize: borderSize)
     }
     
     func setupLabels(){
@@ -107,7 +129,7 @@ import UIKit
             label.text = items[index - 1]
             label.backgroundColor = UIColor.clear
             label.textAlignment = .center
-            label.font = UIFont(name: "Avenir-Black", size: 15)
+            label.font = font
             label.textColor = index == 1 ? selectedLabelColor : unselectedLabelColor
             label.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview(label)
@@ -121,24 +143,10 @@ import UIKit
         var oldFrame = label.bounds
         let newWidth = oldFrame.width - 50
         oldFrame.size.width = newWidth
-        label.frame = oldFrame
-        
-        
-        
+        label.frame = oldFrame        
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        var selectFrame = self.bounds
-        let newWidth = selectFrame.width / CGFloat(items.count)
-        selectFrame.size.width = newWidth
-        thumbView.frame = selectFrame
-        thumbView.backgroundColor = thumbColor
-        displayNewSelectedIndex()
-        
-    }
-    
+
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         
         let location = touch.location(in: self)
@@ -165,19 +173,21 @@ import UIKit
         }
         
         let label = labels[selectedIndex]
-        label.textColor = selectedLabelColor
         
         UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: UIView.AnimationOptions.allowAnimatedContent, animations: {
             
+            label.textColor = self.selectedLabelColor
+            
             var newFrame = label.frame
-            newFrame.origin.y = newFrame.height-self.thumUnderLineSize
+            newFrame.origin.y = newFrame.height - self.thumUnderLineSize
             newFrame.size.height = self.thumUnderLineSize
             
             self.thumbView.frame = newFrame //label.frame
             
-            }, completion: nil)
+        }, completion: nil)
     }
     
+    //MARK:- constraints
     func addIndividualItemConstraints(items: [UIView], mainView: UIView, padding: CGFloat) {
         
         for (index, button) in items.enumerated() {
